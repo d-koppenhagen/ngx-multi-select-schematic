@@ -1,0 +1,21 @@
+{
+  "$schema": "http://json-schema.org/schema",
+  "id": "Hello",
+  "title": "Hello schematic",
+  "type": "object",
+  "description": "Say hello to someone",
+  "properties": {
+    "name": {
+      "type": "array",
+      "description": "Specifies which interfaces to implement.",
+      "uniqueItems": true,
+      "minItems": 1,
+      "items": {
+        "enum": ["hans", "peter", "paul"],
+        "type": "string"
+      },
+      "default": ["hans", "peter", "paul"],
+      "x-prompt": "Which interfaces would you like to implement?"
+    }
+  }
+}
