@@ -9,13 +9,6 @@ Setup:
 ```bash
 npm i -g @angular-devkit/schematics-cli@next
 npm i # in the current directory
-schematics .:hello --debug=false
-? Which interfaces would you like to implement? (Press <space> to select, <a> to toggle all, <
-i> to invert selection)
-❯◉ hans
- ◉ peter
- ◉ paul
-schematics .:hello --debug=false --name="paul, peter"
 ```
 
 Run with prompt (works):
